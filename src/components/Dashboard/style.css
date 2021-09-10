@@ -1,0 +1,115 @@
+.modal-dialog{
+    width: 100% !important;
+    max-width: 1100px !important;
+    height: auto !important;
+    margin: 0 0 0 auto;
+  }
+  .btn-primary{
+    width: 105px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+  }
+  .close{
+    border: none;
+    background: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .modal-footer{
+      display: none;
+  }
+  h3{
+      color: gray;
+      text-align: center;
+  }
+  p{
+      color: gray;
+      text-align: center;
+  }
+
+  /* Model-Content */
+  #modal-center___BV_modal_content_{
+      max-width: 550px !important;
+      margin: 0 auto !important;
+      text-align: initial;
+  }
+  #modal-multi-3___BV_modal_content_{
+      max-width: 550px !important;
+      margin: 0 auto !important;
+      text-align: initial;
+      top: 168px;
+  }
+  #modal-center___BV_modal_content_ p{
+      margin-top: 0px !important;
+      text-align: initial;
+    }
+ .modal-content-item{
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgba(0,0,0,.1);
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      padding: 16px 3px;
+      margin: 0px 16px;
+      margin-bottom: 28px;
+  }
+  .modal-content-item p{
+      color: black;
+      margin: 0px;
+  }
+  .modal-content-item h5{
+    margin: 0px;
+}
+.modal-content-item span{
+    font-size: 12px;
+}
+  .modal-btn{
+    text-align: center;
+  }
+  .modal-btn button{
+      position: unset;
+}
+.payment-method{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding: 0px 22px 20px;
+}
+.payment-method h6{
+    margin: 0px;
+}
+.payment-method a{
+    font-size: 12px;
+    color: #0d6efd;
+    cursor: pointer;
+    text-decoration: none;
+}
+.agreement{
+    text-align: center !important;
+    font-size: 14px;
+    color: black;
+}
+.agreement a{
+    text-decoration: none;
+}
+#modal-multi-3___BV_modal_content_ button {
+    position: unset;
+}
+.add-card {
+    margin-top: 15px;
+    text-align: center;
+}
+#__BVID__10 {
+    width: 100%;
+    padding: 9px;
+    border-radius: 7px;
+    margin-left: 59px;
+    outline: none;
+    background: white;
+    color: gray;
+} 

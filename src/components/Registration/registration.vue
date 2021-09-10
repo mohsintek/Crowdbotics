@@ -42,7 +42,8 @@
         </b-form-group>
       </div>
      
-      <b-button variant="danger" @click="handlesubmit()">Sign Up</b-button>
+      <b-button variant="danger" @click="handlesubmit()" :class="[disableCreateButttton ? 'disbale' : '']"
+                :disabled="disableCreateButttton">Sign Up</b-button>
       <p>Already have an account?<router-link to="/">Login</router-link></p>
     </div>
   </div>
@@ -65,21 +66,29 @@ export default {
     };
   },
   computed: {
-    veryEmailkey() {
-      return this.$store.getters.users;
+    disableCreateButttton() {
+      if (this.user.password.length < 4) {
+        return true;
+      } else {
+        return false;
+      }
     },
   },
   methods: {
     ...mapActions(["register"]),
 
     handlesubmit() {
-      this.register(this.user);
+      this.register({vm:this,payload:this.user});
     },
   },
 };
 </script>
 
 <style scoped>
+   .btn.btn-danger.disabled.disbale {
+  background-color: gray;
+  cursor: not-allowed;
+}
 .dashboard {
   padding: 60px;
   display: flex;

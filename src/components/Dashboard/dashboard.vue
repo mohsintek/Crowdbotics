@@ -255,7 +255,7 @@ export default {
       this.planById(id);
     },
     getSubscription() {
-      this.subscriptions(this.subscription);
+      this.subscriptions({vm:this, payload : this.subscription});
       this.subscription.active = true;
       this.$refs.myModalRef.hide();
     },
@@ -282,7 +282,7 @@ export default {
   width: 50%;
   margin-bottom: 15px;
   display: flex;
-  border: 1px solid gray;
+  border: 1px solid rgb(44, 43, 43);
   border-radius: 4px;
 }
 .search.form-control {

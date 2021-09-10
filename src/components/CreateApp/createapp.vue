@@ -109,7 +109,7 @@ export default {
     ...mapActions(["createapp"]),
     ...mapActions(["getcreatedapps"]),
     onSubmit() {
-      this.createapp(this.app);
+      this.createapp({vm:this,payload:this.app});
       this.app = "";
     },
     getappType(type) {
